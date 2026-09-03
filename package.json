@@ -1,0 +1,24 @@
+{
+  "name": "alien-snake",
+  "private": true,
+  "description": "Cobrinha num mundo aberto infinito, coberto de névoa. Canvas 2D, sem dependência de runtime.",
+  "contributors": [
+    "Caio Daniel",
+    "Camily Ferreira",
+    "Elton",
+    "José Carlos",
+    "Samuel Rocha",
+    "Lone"
+  ],
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  }
+}

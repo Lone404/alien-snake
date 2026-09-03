@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Snake</title>
+  </head>
+  <body>
+    <main class="stage" id="stage" data-phase="menu">
+      <canvas id="game"></canvas>
+
+      <header class="hud hud-top">
+        <dl class="stats">
+          <div class="stat">
+            <dt>Pontos</dt>
+            <dd id="stat-score" class="is-primary">0</dd>
+          </div>
+          <div class="stat">
+            <dt>Recorde</dt>
+            <dd id="stat-best">0</dd>
+          </div>
+          <div class="stat">
+            <dt>Tamanho</dt>
+            <dd id="stat-length">3</dd>
+          </div>
+          <div class="stat">
+            <dt>Regiões</dt>
+            <dd id="stat-regions">1</dd>
+          </div>
+          <div class="stat">
+            <dt>Velocidade</dt>
+            <dd><span id="stat-speed">6.0</span><small>p/s</small></dd>
+          </div>
+        </dl>
+      </header>
+
+      <div class="hud hud-bottom">
+        <p class="locator">
+          <span class="locator-biome" id="locator-biome">Planície</span>
+          <span class="locator-coords" id="locator-coords">0, 0</span>
+        </p>
+      </div>
+
+      <div class="toasts" id="toasts"></div>
+
+      <div class="overlay" id="overlay" data-tone="neutral" hidden>
+        <div class="overlay-content">
+          <p class="overlay-eyebrow"></p>
+          <h2 class="overlay-title"></h2>
+          <p class="overlay-body"></p>
+          <ul class="tags overlay-tags" hidden></ul>
+          <p class="overlay-hint"></p>
+        </div>
+      </div>
+    </main>
+
+    <div class="menu" id="menu" hidden></div>
+
+    <div class="pill" id="audio-pill"></div>
+    <div class="modal" id="settings" hidden></div>
+    <div class="modal" id="credits" hidden></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
